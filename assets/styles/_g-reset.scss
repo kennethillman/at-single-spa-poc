@@ -1,0 +1,41 @@
+//
+// RESET
+// 
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body, 
+ul,
+li {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+p {
+	margin-top: 0; 
+}
+
+img,
+svg {
+	width: 100%;
+	height: auto;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}

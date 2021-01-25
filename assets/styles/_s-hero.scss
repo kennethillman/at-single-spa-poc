@@ -1,0 +1,80 @@
+//
+// HERO
+// 
+
+.fms-s-hero {
+
+	.fms-body {
+		padding: 60px 0 120px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.hero-msg{
+			font-size: 56px;
+			letter-spacing: -.03em;
+			line-height: 1;
+			margin: 0;
+
+		}
+	}
+
+	span {
+		opacity: .16;
+		font-weight: 500;
+		display: block;
+		text-align: center;
+		font-size: 28px;
+	}
+
+	.-mode-svelte {
+	  opacity: .88;
+	  color: #ff2c13;
+	}
+
+	.-mode-react {
+	  opacity: .88;
+	  color: #47d7f8;
+	}
+
+	.-mode-vue {
+	  opacity: .88;
+	  color: #4fc085
+	}
+
+	.-mode-svelte &,
+	.-mode-vue &,
+	.-mode-react &,
+	.-mode-light & {
+		span {
+			opacity: .44;
+			color: var(--fms-text);
+		}
+	}
+
+	.-mode-dark &  {
+		span {
+			opacity: .44;
+			color: #fff!important;
+		}
+	}
+
+
+	// Quick n dirty -> Always go mobile-first! 
+	@media only screen and (max-width: 767px) {
+		.fms-body {
+    		padding: 0 0 0px;
+    		.hero-msg {
+    			padding: 0 0 24px;
+			    font-size: 26px;
+			    margin: 0;
+			}
+		}
+
+		span {
+		    font-size: 16px;
+		}
+
+	}
+
+
+}

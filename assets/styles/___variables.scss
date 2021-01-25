@@ -1,0 +1,92 @@
+//
+// VARIABLES
+// 
+
+//////////////////////
+// COLORS 
+////////////////////
+
+$black: 	#000000!default;
+$white: 	#ffffff!default;
+
+$blue:      blue!default;
+$green:     #99bd48!default;
+$red:       #b03c33!default;
+$yellow:    #fbdb50!default;
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+/////////////////////
+// FONTS
+///////////////////
+
+// SPECIFIC NAMES
+$font-fms: 'Titillium Web', "-apple-system", BlinkMacSystemFont, "Apple Color Emoji", “Segoe UI”, Roboto, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+$font-system: "-apple-system", BlinkMacSystemFont, "Apple Color Emoji", “Segoe UI”, Roboto, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+
+// GENERAL NAMES
+$font-header: $font-fms;
+$font-bread: $font-system;
+	
+
+:root {
+  --fms-skin: #ffffff;
+  --fms-skin-bg: linear-gradient(#fff, #fff 34%, #efefef 90%);
+  --fms-link: #000;
+  --fms-btn-txt: #ffffff;
+}
+
+.-mode-light {
+  --fms-skin: #ffffff;
+  --fms-skin-bg: linear-gradient(#fff, #fff 34%, #f6f6f6 90%);
+  --fms-link: #ccc;
+  --fms-btn-txt: #ffffff;
+  --fms-text: #000;
+}
+
+.-mode-dark {
+  --fms-skin: #000000;
+  --fms-skin-bg: linear-gradient(#1e1e1e, #0e0e0e 34%, #000 90%);
+  --fms-link: #fff;
+  --fms-btn-txt: #000000;
+  --fms-text: #ffffff;
+}
+
+.-mode-svelte {
+  --fms-skin: #ff2c13;
+  --fms-skin-bg: linear-gradient(#fff, #fff 34%, #ffd8d9 90%);
+  --fms-link: #ff2c13;
+  --fms-btn-txt: #ffffff;
+  --fms-text: #000000;
+}
+
+.-mode-react {
+  --fms-skin: #47d7f8;
+  --fms-skin-bg: linear-gradient(#fff, #fff 34%, #bef1fb 90%);
+  --fms-link: #47d7f8;
+  --fms-btn-txt: #ffffff;
+  --fms-text: #000000;
+}
+
+.-mode-vue {
+  --fms-skin: #4fc08d;
+  --fms-skin-bg: linear-gradient(#fff, #fff 34%, #b8f7dc 90%);
+  --fms-link: #4fc08d;
+  --fms-btn-txt: #ffffff;
+   --fms-text: #000000;
+}
+
+
+
+
+

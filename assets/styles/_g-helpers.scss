@@ -1,0 +1,82 @@
+//
+// HELPERS
+// 
+
+
+
+// VISIBILITY
+
+.-hide {
+   display: none!important;
+}
+
+// .-hide-mobile{
+//    display: none!important;
+//    @include VP600 {
+//     display: block!important;
+//    }
+// }
+
+.-show {
+   display: block!important;
+}
+
+.-wip {
+    opacity: .3;
+    filter: grayscale(100%);
+}
+
+
+
+body {
+
+  // DISPLAY
+
+  .-inbl {
+    display: inline-block;
+    width: auto;
+  }
+
+  .-bl {
+    display: block;
+  }
+
+  .-in {
+    display: inline;
+  }
+
+}
+
+
+
+// TEXT
+
+.-text-center {
+  text-align: center;
+}
+.-text-left {
+  text-align: left;
+}
+.-text-right {
+  text-align: right;
+}
+
+
+.-text-green {
+  color: $green;
+}
+
+.-text-red {
+  color: $red;
+}
+
+.-fill-red {
+  fill: $red !important;
+}
+
+.-fill-green {
+  fill: $green !important ;
+}
+
+
+

@@ -1,0 +1,114 @@
+//
+// BUTTONS
+// 
+
+.fms-c-btn {
+	font-family: $font-fms;
+	display: inline-block;
+	width: auto;
+	color: var(--fms-btn-txt);
+	background-color: var(--fms-link);
+	border: 2px solid var(--fms-link);
+	font-size: 18px;
+	line-height: 1;
+	text-decoration: none;
+	text-align: center;
+	line-height: 1;
+	padding: 8px 24px;
+	overflow: hidden;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+	white-space: nowrap;
+
+	&:hover {
+		cursor: pointer;
+		filter: brightness(108%);
+	}
+
+	&:active{
+		cursor: pointer;
+		filter: brightness(92%);
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+
+	svg {
+		position: absolute;
+		fill: var(--fms-btn-txt);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		height: 58%;
+		width: 58%;
+		max-width: 40px;
+	}
+
+
+	// DISABLED
+
+	&.-disabled {
+		background-color: $gray-300;
+		border-color: $gray-300;
+		&:hover,
+		&:active{
+			cursor: default;
+			background-color: $gray-300;
+			border-color: $gray-300;
+			filter: none;
+		}
+
+		&.-ghost {
+			color: $gray-300;
+			&:hover,
+			&:active{
+				background-color: transparent;
+				color: $gray-300;
+			}
+		}
+	}
+
+
+	// SIZES
+
+	&.-small {
+		padding: 6px 24px;
+		font-size: 15px;
+	}
+
+	&.-xsmall {
+		padding: 4px 18px;
+		font-size: 12px;
+	}
+
+	// GHOST
+	// (i) -> Transparent button with borders
+	// (!!)-> Use carefully with skins, some link colors may not have contrast.
+
+	&.-ghost {
+		background-color: transparent;
+		color: var(--fms-link);
+		&:hover {
+			background-color: var(--fms-link);
+			color: var(--fms-btn-txt);
+		}
+	}
+
+	// ROUND
+
+	&.-round {
+		width: auto;
+		display: inline-block;
+		padding: 0;
+		width: 32px;
+		height: 32px;
+		line-height: 24px;
+		border-radius: 999px;	
+	}
+
+
+}

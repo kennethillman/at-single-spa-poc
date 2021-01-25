@@ -1,0 +1,188 @@
+//
+// CARD - APP
+// 
+
+.fms-m-card-app{
+	margin-top: -48px;
+	border-radius: 12px;
+	background: $white; 
+	padding: 32px 12px;
+	box-shadow: 4px 8px 24px rgba(0, 0, 0, .14 );
+	text-align: center;
+	border-bottom: 6px solid var(--fms-skin);
+
+	figure {
+		width: 120px;
+		height: 120px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	// Svelte Svg file diverted :(
+	.svelte-logo {
+		padding-top: 20px;
+		svg {
+			height: 90px;
+		}
+	}
+
+	.-mode-dark & {
+		background: $black; 
+		box-shadow: 4px 8px 24px rgba(255, 255, 255, .10 );
+		.card-colors {
+			figure {
+				box-shadow: 0px 1px 4px rgba(255,255,255,.30);
+			}
+		}
+	}
+
+	&.-mode-default {
+		svg {
+			.-mode-svelte & {
+				filter: grayscale(1);
+			}
+
+			.-mode-react & {
+				filter: grayscale(1);
+			}
+
+			.-mode-vue & {
+				filter: grayscale(1);
+			}
+			.-mode-light & {
+				filter: grayscale(1);
+				opacity: .5;
+			}
+
+			.-mode-dark & {
+				opacity: .5;
+				filter: grayscale(1);
+			}
+		}
+	}
+
+	.-mode-svelte &,
+	.-mode-vue &,
+	.-mode-react &,
+	.-mode-light & {
+		.card-msg-mini span {
+			opacity: .44;
+			color: var(--fms-text);
+		}
+	}
+
+	.-mode-dark &  {
+		.card-msg-mini span  {
+			opacity: .44;
+			color: #fff!important;
+		}
+	}
+
+	.card-header {
+		font-size: 24px;
+		padding: 0 0 0px;
+	}
+
+	.card-msg-mini {
+		font-size: 14px;
+		padding: 16px 0 0 ;
+		
+		span {
+			font-size: 12px;
+			opacity: .44;
+			display: block;
+		}
+	}
+
+	.card-send {
+		margin-top: 16px; 
+	}
+
+	.card-theme {
+		margin-top: 16px; 
+	}
+
+	.card-colors {
+		margin: 24px 0 0; 
+		display: flex;
+		justify-content: center;
+
+		figure {
+			margin: 0 2px;
+			height: 32px;
+			width: 32px;
+			background: #eee;
+			border-radius: 100px;
+			box-shadow: 0px 1px 4px rgba(0,0,0,.30);
+			&.color-bg {
+				background: var(--fms-skin-bg);
+			}
+			&.color-skin {
+				background: var(--fms-skin);
+			}
+			&.color-text {
+				background: var(--fms-text);
+			}
+		}
+
+	}
+
+	// Quick n dirty -> Always go mobile-first! 
+	@media only screen and (max-width: 767px) {
+		margin: 0 auto 16px;
+		position: relative;
+		padding: 12px 12px;
+		min-width: 270px;
+		max-width: 440px; 
+
+		> figure {
+		    width: 60px;
+		    height: 60px;
+		    position: absolute;
+		    left: 10px;
+			top: 12px;
+		}
+
+		// Svelte Svg file diverted :(
+		.svelte-logo {
+			padding-top: 00px;
+			svg {
+				height: 45px;
+			}
+		}
+
+		.card-header {
+			display: none;
+		}
+
+		.card-colors {
+			position: absolute;
+			left: 18px;
+			bottom: 9px;
+		}
+
+		.card-theme {
+			position: absolute;
+			right: 16px;
+			bottom: 12px;
+		}
+
+		.card-send {
+			position: absolute;
+			right: 16px;
+			top: 0px;
+		}
+
+		.card-msg-mini {
+		    font-size: 14px;
+		    padding: 50px 0 43px;
+		    span {
+		    	display: none;
+		    }
+		}
+
+	}
+
+
+
+}

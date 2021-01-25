@@ -1,0 +1,41 @@
+//
+// GLOBALS
+// 
+
+body {
+	background: var(--fms-skin-bg); 
+	min-height: 100vh;
+}
+
+[class*='-s-'] {
+	padding:16px;
+}
+
+.fms-body {
+	width: 100%;
+	max-width: 1048px;
+	margin: 0 auto;
+}
+
+.fms-s-apps {
+	.fms-body {
+		display: flex;
+		justify-content: space-around;
+		>  div {
+			width: 30%;
+		}
+	}
+}
+
+
+// Quick n dirty -> Always go mobile-first! 
+@media only screen and (max-width: 767px) {
+	.fms-s-apps {
+		.fms-body {
+			display: block;
+			>  div {
+				width: 100%;
+			}
+		}
+	}
+}
